@@ -55,7 +55,7 @@ def file_upload(file_uploaded):
                 inputText = text
                 
         if file_uploaded.name[-4:] == ".csv": 
-            csvFile = open(file_uploaded.name, newline='')       
+            csvFile = open(file_uploaded.name)       
             reader = csv.reader(csvFile)
             for line in reader:
                 for i in line:
